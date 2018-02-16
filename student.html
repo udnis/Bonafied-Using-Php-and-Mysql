@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<script type="">
+  function feecall(){
+    document.getElementById('fee').value=1;
+  }
+</script>
+
+</head>
+<title>request</title>
+<body>
+
+<form action="student.php" method="get">  
+<b>  Name:</b>
+ <input type="text" name="name" value="" required>
+   
+  
+ <b> Register number:</b>
+  <input type="text" name="regno" value="" required>
+
+  
+ <b> Roll number:</b> 
+ <input type="text" name="rono" value="" required>
+  
+ 
+ <b>DOB:</b>
+<input id="date" name="dob" type="date" min="1" max="12" maxlength="2" size="1" required>
+ 
+ <b>Department</b>
+<select name="dept">
+<option value=" ">Select </option>
+<option value="Aero">Aero</option>
+<option value="Bio">BIO TECH</option>
+<option value="Csc">CSC</option>
+<option value="Civil">CIVIL</option>
+<option value="Ece">ECE</option>
+<option value="EEE">EEE</option>
+<option value="Ei">EI</option>
+<option value="It">IT</option>
+<option value="Mech">MECH</option>
+<option value="hg">MBA</option>
+<option value="Sci">Science and humanities</option>
+</select>
+
+<b>Requirement:Bonofied certificate<b>
+<select name="bona">
+<option value="null">No Need</option>
+<option value="bank loan">Bank loan</option>
+<option value="scholarship">scholarship</option>
+<option value="other">Other</option>
+</select>
+<input type="text" name="other" display="hidden" ><br>
+<input id="fee" type="checkbox" name="feere" value="0" onclick="feecall()"> Fee recipt<br>
+
+
+<input type="submit" value="submit" >
+
+
+ </form>
+
+  <center>
+  
+<a href="status.php">view status</a>
+</fieldset>
+</form>
+</body>
+</html>
+
+
+
+
